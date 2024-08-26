@@ -72,7 +72,7 @@ const Header = () => {
               </li>
               {/* Dropdown for desktop nav */}
               <li className="relative group" onClick={() => setShowDropdown(!showDropdown)}>
-                <button className="flex items-center uppercase pb-2 font-bold hover:text-blue-900 hover:border-b-2 hover:border-b-blue-900 transition duration-700 ease-in-out">
+                <button className="flex items-center uppercase font-bold hover:text-blue-900 hover:border-b-2 hover:border-b-blue-900 transition duration-700 ease-in-out">
                   Services <FaChevronDown className="ml-2" />
                 </button>
                 {showDropdown && (

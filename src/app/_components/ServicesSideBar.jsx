@@ -4,6 +4,8 @@ function ServicesSideBar({
   residentialService,
   commercialService,
   propertyManagementService,
+  sideBarTitle,
+  serviceType
 }) {
   // State to track which accordion is open
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -18,10 +20,10 @@ function ServicesSideBar({
   };
 
   return (
-    <aside className="border-r-2 border-r-slate-100 shadow-md py-3 overflow-y-auto">
+    <aside className="border-r-2 border-r-slate-100 shadow-md py-3 overflow-y-auto hidden md:block">
       <div className="w-full px-4 py-2 bg-blue-900">
         <h2 className="text-2xl font-bold text-center text-white uppercase">
-          Electrical Services
+          {sideBarTitle} Services
         </h2>
       </div>
 
@@ -142,7 +144,7 @@ function ServicesSideBar({
       <div className="bg-blue-800 text-white p-6 shadow-lg mb-6 mt-8">
         <h3 className="text-2xl font-bold mb-2">Special Offer!</h3>
         <p className="mb-4">
-          Get 20% off your first electrical service with us! Don't miss out on
+          Get 20% off your first {serviceType} service with us! Don&apos;t miss out on
           this limited-time offer.
         </p>
         <button className="bg-white text-blue-500 font-semibold py-2 px-4 rounded hover:bg-blue-100 transition duration-300">

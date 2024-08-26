@@ -1,42 +1,17 @@
 "use client";
 
-"use client";
 
 import ContactForm from "@/app/_components/ContactFormComponent";
 import ServicesSideBar from "@/app/_components/ServicesSideBar";
 import React, { useEffect, useRef } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-function page() {
+function Page() {
   const sidebarRef = useRef(null);
   const imgRef = useRef(null);
   const contentRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sidebar = sidebarRef.current;
-      const img = imgRef.current;
-      const content = contentRef.current;
-
-     
-
-      if (sidebar) {
-        const stickyOffset = sidebar.offsetTop;
-        if (window.scrollY > stickyOffset) {
-          sidebar.classList.add("fixed", "top-5", "z-0");
-        } 
-        if(window.scrollY <= img.offsetTop) {
-          sidebar.classList.remove("fixed", "top-5", "z-0");
-        }
-        
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+ 
   
   
   const residentialServices = [
@@ -112,17 +87,19 @@ function page() {
 
       {/* Side Bar */}
       {/* Side Bar */}
-      <div className="grid grid-cols-8 my-6 gap-3">
-        <div className="col-start-1 col-end-3 max-w-[20vw] ml-4" id="sidebar" ref={sidebarRef}>
+      <div className="flex flex-col mx-3 md:grid md:grid-cols-8 my-6 gap-3">
+        <div className="hidden md:block md:col-start-1 md:col-end-3 max-w-[20vw] ml-4" id="sidebar" ref={sidebarRef}>
           {/* Aside */}
           <ServicesSideBar
             residentialService={residentialServices}
             commercialService={commercialServices}
             propertyManagementService={propertyManagementServices}
+            sideBarTitle='Electrical'
+            serviceType='electrical'
           />
         </div>
 
-        <div className="col-start-3 col-end-9 pr-3" ref={contentRef}>
+        <div className="w-full md:col-start-3 md:col-end-9  pr-3" ref={contentRef}>
           {/* content */}
 
           {/* Image */}
@@ -132,7 +109,7 @@ function page() {
           ></div>
 
           {/* Heading */}
-          <div className="w-[80%]">
+          <div className="w-full md:w-[80%]">
             <h2 className="text-2xl text-gray-700 font-bold uppercase my-5">Electrical Services Tailored to Your Needs</h2>
             <p className="mb-16">
               At Home Services Co., we understand that clear and consistent communication is vital for the success of any project. From our dedicated office team to our skilled field technicians, we are committed to keeping our clients informed every step of the way. Our philosophy is simple: treat every client with the utmost care, quality, and integrity, regardless of the project size. We aim to build lasting relationships with each client, ensuring that they feel valued and heard.
@@ -160,10 +137,10 @@ function page() {
           </div>
 
           {/* Contact Form */}
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-start">
             <h2 className="text-center text-3xl font-bold text-gray-700">Get a Free Quote</h2>
             <ContactForm
-            formStyles={'w-[80%]'}
+            formStyles={'w-[100%]'}
             />
           </div>
         </div>
@@ -175,4 +152,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
