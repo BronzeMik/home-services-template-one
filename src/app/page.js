@@ -13,7 +13,6 @@ import OurWork from "./_components/OurWorkSection";
 import ClientReview from "./_components/ClientReviewSection";
 import PostCardSection from "./_components/PostCardSectionComponent";
 import Newsletter from "./_components/NewsLetterComponent";
-import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -50,8 +49,7 @@ export default function Home() {
       {/* News Letter */}
       <Newsletter />
 
-      {/* Footer */}
-      <Footer />
+      
       
       
     </>

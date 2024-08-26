@@ -37,13 +37,16 @@ const Header = () => {
             {showDropdown && (
               <ul className="absolute left-0 top-full w-full bg-blue-900 text-white">
                 <li className="py-2 w-full text-center hover:bg-white hover:text-blue-900">
-                  <Link href="/services/service1">Service 1</Link>
+                  <Link href="/services/electrical">Electrical</Link>
                 </li>
                 <li className="py-2 w-full text-center hover:bg-white hover:text-blue-900">
-                  <Link href="/services/service2">Service 2</Link>
+                  <Link href="/services/plumbing">Plumbing</Link>
                 </li>
                 <li className="py-2 w-full text-center hover:bg-white hover:text-blue-900">
-                  <Link href="/services/service3">Service 3</Link>
+                  <Link href="/services/carpentry">Carpentry</Link>
+                </li>
+                <li className="py-2 w-full text-center hover:bg-white hover:text-blue-900">
+                  <Link href="/services/roofing">Roofing</Link>
                 </li>
               </ul>
             )}
@@ -56,7 +59,7 @@ const Header = () => {
           <div className="hidden md:flex md:flex-col md:w-[90%]">
             <ContactBanner />
             {/* Desktop nav */}
-            <ul className="space-x-4 text-lg hidden md:flex md:justify-end md:items-start md:pr-14 md:pt-6 gap-8">
+            <ul className="space-x-4 text-lg hidden md:flex md:justify-end md:items-center md:pr-14 md:pt-6 gap-8">
               <li className="group relative">
                 <Link href="/" className="uppercase pb-2 font-bold hover:text-blue-900 hover:border-b-2 hover:border-b-blue-900 transition duration-700 ease-in-out">
                   Home
@@ -73,15 +76,18 @@ const Header = () => {
                   Services <FaChevronDown className="ml-2" />
                 </button>
                 {showDropdown && (
-                  <ul className="absolute left-0 top-8 w-40 bg-white shadow-lg border border-gray-200">
+                  <ul className="absolute left-0 z-50 top-8 w-40 bg-white shadow-lg border border-gray-200">
                     <li className="py-2 px-4 hover:bg-blue-800 hover:text-white">
-                      <Link href="/services/service1">Service 1</Link>
+                      <Link href="/services/electrical">Electrical</Link>
                     </li>
                     <li className="py-2 px-4 hover:bg-blue-800 hover:text-white">
-                      <Link href="/services/service2">Service 2</Link>
+                      <Link href="/services/plumbing">Plumbing</Link>
                     </li>
                     <li className="py-2 px-4 hover:bg-blue-800 hover:text-white">
-                      <Link href="/services/service3">Service 3</Link>
+                      <Link href="/services/carpentry">Carpentry</Link>
+                    </li>
+                    <li className="py-2 px-4 hover:bg-blue-800 hover:text-white">
+                      <Link href="/services/roofing">Roofing</Link>
                     </li>
                   </ul>
                 )}
@@ -90,7 +96,10 @@ const Header = () => {
                 <Link href="/contact" className="uppercase pb-2 font-bold hover:text-blue-900 hover:border-b-2 hover:border-b-blue-900 transition duration-700 ease-in-out">
                   Contact
                 </Link>
+                
+
               </li>
+              <li><button className="bg-blue-900 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-blue-800 text-white px-6 py-3">Client Login</button></li>
             </ul>
           </div>
         </nav>
