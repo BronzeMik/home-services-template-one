@@ -12,7 +12,7 @@ const AboutUsHeroSection = () => {
         style={{ backgroundImage: `url('/hero-bg.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'scroll' }}
       >
         {/* Overlay */}
-        <div className="absolute top-0 inset-0 bg-gradient-to-r from-white to-slate-50 opacity-90 z-0"></div> 
+        <div className="absolute top-0 inset-0 bg-gradient-to-r from-blue-100 to-slate-50 opacity-90 z-0"></div> 
         <div className="relative z-10 flex flex-col items-center justify-center h-full pl-4 w-[90%] text-center md:ml-12 md:mr-6 md:min-w-[50%]">
           <div className='flex justify-around items-center mb-10 font-bold'>
             <a href='/'>Home</a>

@@ -34,7 +34,7 @@ const ClientReview = () => {
             <h4 className="text-xl font-semibold">Kim Levitz</h4>
             <p className="text-sm">Homeowner</p>
             <p className="mt-2">
-              "Working with this team was a fantastic experience. Their professionalism, quality of work, and attention to detail exceeded all of our expectations. We highly recommend their services!"
+              &quot;;Working with this team was a fantastic experience. Their professionalism, quality of work, and attention to detail exceeded all of our expectations. We highly recommend their services!&quot;
             </p>
           </div>
         </div>

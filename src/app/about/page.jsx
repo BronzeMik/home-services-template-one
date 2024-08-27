@@ -8,7 +8,7 @@ import Newsletter from "../_components/NewsLetterComponent";
 
 function page() {
   return (
-    <div>
+    <div className="bg-blue-100 bg-opacity-5">
       <AboutUsHeroSection />
       <div className="flex flex-col items-center justify-center mx-auto py-12">
         <p className="px-3 text-left md:w-[70%] text-3xl md:text-4xl md:text-center pb-10">
@@ -23,7 +23,7 @@ function page() {
       >
         {/* Gradient Overlay */}
         <div className="absolute  inset-0 bg-gradient-to-r from-cyan-500 to-blue-900 opacity-85"></div>
-        <p className="text-white text-center relative z-40 w-[70%] text-xl font-bold">“Our success is built on a foundation of integrity, innovation, and unwavering commitment to excellence. We don&apos;t just deliver services; we deliver trust and quality, turning our clients' visions into reality.”</p>
+        <p className="text-white text-center relative z-40 w-[70%] text-xl font-bold">“Our success is built on a foundation of integrity, innovation, and unwavering commitment to excellence. We don&apos;t just deliver services; we deliver trust and quality, turning our clients&apos; visions into reality.”</p>
         </section>
         <h3 className="text-2xl font-bold mt-6 text-blue-900 md:text-3xl uppercase">
           Our Story

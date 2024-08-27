@@ -4,6 +4,7 @@ import { MdMailOutline } from 'react-icons/md'
 import { SiGooglemaps } from "react-icons/si";
 import Newsletter from '../_components/NewsLetterComponent';
 
+
 function Page() {
   return (
     <div className='bg-blue-50'>
@@ -67,7 +68,7 @@ function Page() {
         </div>
 
           {/* Form */}
-        <form className='w-[95%] md:w-1/2 border-2 shadow-lg bg-gradient-to-r from-blue-900 to-cyan-500 px-6 py-4 rounded-md'>
+        <form className='w-[95%] md:w-1/2 shadow-xl bg-gradient-to-r from-blue-900 to-cyan-500 px-6 py-4 rounded-md'>
             <div className='flex flex-col mb-4'>
               
               <input

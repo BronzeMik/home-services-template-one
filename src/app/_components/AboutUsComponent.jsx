@@ -15,7 +15,7 @@ const AboutUs = () => {
               At Home Services Co., we pride ourselves on delivering top-notch handyman services that cater to all your home improvement needs. Our team of experienced professionals is dedicated to providing high-quality craftsmanship and reliable solutions, ensuring your satisfaction with every project.
             </p>
             <p className="text-lg leading-relaxed">
-              Whether it's plumbing, electrical repair, AC repair, or general home maintenance, we have the expertise to handle it all. Trust us to keep your home in perfect condition, with a commitment to excellence and attention to detail that sets us apart from the rest.
+              Whether it&apos;s plumbing, electrical repair, AC repair, or general home maintenance, we have the expertise to handle it all. Trust us to keep your home in perfect condition, with a commitment to excellence and attention to detail that sets us apart from the rest.
             </p>
             <button href="/services#plumbing" className="bg-blue-500 hover:bg-cyan-500 text-white px-4 py-3 rounded-lg mt-4">Learn More</button>
           </div>
